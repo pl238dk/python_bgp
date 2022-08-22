@@ -1,0 +1,38 @@
+<html>
+	<head>
+<style>
+* {
+	font-family : monospace;
+	background-color: black;
+	color: green;
+}
+table, th, td {
+	border: 1px solid green;
+	margin: 0 auto 0 auto;
+}
+.inactive {
+	background-color: red;
+}
+</style>
+	</head>
+	<body>
+		<table>
+		<tr>
+			<th>NLRI</th>
+			<th>Next Hop</th>
+			<th>Status</th>
+		</tr>
+		{% for x in result %}
+		<tr>
+			<td>{{ x[0] }}</td>
+			<td>{{ x[1] }}</td>
+			{% if x[2] == 0 %}
+			<td class='inactive'>INACTIVE</td>
+			{% else %}
+			<td>ACTIVE</td>
+			{% endif %}
+		</tr>
+		{% endfor %}
+		</table>
+	</body>
+</html>

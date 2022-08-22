@@ -1,0 +1,83 @@
+Listening for BGP peer ...
+connection to ('3.59.0.129', 53239)
+
+RECEIVED:
+        raw: ffffffffffffffffffffffffffffffff002d01040001000f070707071002060104000100010202800002020200
+        marker: ffffffffffffffffffffffffffffffff
+        length: 45 bytes
+        type: OPEN
+        optional params: 040001000f070707071002060104000100010202800002020200
+                version: 4
+                AS: 1
+                hold: 15 seconds
+                id: 7.7.7.7
+                len(optional): 16 bytes
+                optional: 02060104000100010202800002020200
+                        capability: multiprotocol extensions - IPv4,Unicast
+                        capability: Route-refresh - Cisco
+                        capability: Route-refresh
+
+RECEIVED:
+        raw: ffffffffffffffffffffffffffffffff005e020000001c40010102400200400304033b00818004040000000040050400000064180a0102200707070720060606062005050505200404040418033b00200303030320020202022001010101
+        marker: ffffffffffffffffffffffffffffffff
+        length: 94 bytes
+        type: UPDATE
+        optional params: 0000001c40010102400200400304033b00818004040000000040050400000064180a0102200707070720060606062005050505200404040418033b00200303030320020202022001010101
+                len(withdrawn): 0
+                withdrawn:
+                len(path attributes): 28
+                path attributes: 40010102400200400304033b00818004040000000040050400000064
+                        well-known,transitive,complete,regular length,  ORIGIN: INCOMPLETE
+                        well-known,transitive,complete,regular length,  AS_PATH: blank
+                        well-known,transitive,complete,regular length,  NEXT_HOP: 3.59.0.129
+                        optional,non-transitive,complete,regular length,        MED: 0
+                        well-known,transitive,complete,regular length,  LOCAL_PREF: 100
+                nlris: 180a0102200707070720060606062005050505200404040418033b00200303030320020202022001010101
+                        NLRI: 10.1.2/24
+                        NLRI: 7.7.7.7/32
+                        NLRI: 6.6.6.6/32
+                        NLRI: 5.5.5.5/32
+                        NLRI: 4.4.4.4/32
+                        NLRI: 3.59.0/24
+                        NLRI: 3.3.3.3/32
+                        NLRI: 2.2.2.2/32
+                        NLRI: 1.1.1.1/32
+
+RECEIVED:
+        raw: ffffffffffffffffffffffffffffffff003c020000002040010102400204020100024003040a0102028004040000000040050400000064200a282828
+        marker: ffffffffffffffffffffffffffffffff
+        length: 60 bytes
+        type: UPDATE
+        optional params: 0000002040010102400204020100024003040a0102028004040000000040050400000064200a282828
+                len(withdrawn): 0
+                withdrawn:
+                len(path attributes): 32
+                path attributes: 40010102400204020100024003040a0102028004040000000040050400000064
+                        well-known,transitive,complete,regular length,  ORIGIN: INCOMPLETE
+                        well-known,transitive,complete,regular length,  AS_PATH: AS_SEQUENCE {2}
+                        well-known,transitive,complete,regular length,  NEXT_HOP: 10.1.2.2
+                        optional,non-transitive,complete,regular length,        MED: 0
+                        well-known,transitive,complete,regular length,  LOCAL_PREF: 100
+                nlris: 200a282828
+                        NLRI: 10.40.40.40/32
+
+RECEIVED:
+        raw: ffffffffffffffffffffffffffffffff004e02000000284001010240020c0205000200de00df00e000e14003040a0102028004040000000040050400000064200a1e1e1e200a141414200a0a0a0a
+        marker: ffffffffffffffffffffffffffffffff
+        length: 78 bytes
+        type: UPDATE
+        optional params: 000000284001010240020c0205000200de00df00e000e14003040a0102028004040000000040050400000064200a1e1e1e200a141414200a0a0a0a
+                len(withdrawn): 0
+                withdrawn:
+                len(path attributes): 40
+                path attributes: 4001010240020c0205000200de00df00e000e14003040a0102028004040000000040050400000064
+                        well-known,transitive,complete,regular length,  ORIGIN: INCOMPLETE
+                        well-known,transitive,complete,regular length,  AS_PATH: AS_SEQUENCE {2,222,223,224,225}
+                        well-known,transitive,complete,regular length,  NEXT_HOP: 10.1.2.2
+                        optional,non-transitive,complete,regular length,        MED: 0
+                        well-known,transitive,complete,regular length,  LOCAL_PREF: 100
+                nlris: 200a1e1e1e200a141414200a0a0a0a
+                        NLRI: 10.30.30.30/32
+                        NLRI: 10.20.20.20/32
+                        NLRI: 10.10.10.10/32
+
